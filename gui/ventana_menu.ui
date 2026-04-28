@@ -36,10 +36,10 @@
    <widget class="QPushButton" name="btn_psp1">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>240</y>
-      <width>75</width>
-      <height>23</height>
+      <x>90</x>
+      <y>200</y>
+      <width>121</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
@@ -49,10 +49,10 @@
    <widget class="QPushButton" name="btn_psp2">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>300</y>
-      <width>75</width>
-      <height>23</height>
+      <x>270</x>
+      <y>200</y>
+      <width>121</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
@@ -62,14 +62,40 @@
    <widget class="QPushButton" name="btn_salir">
     <property name="geometry">
      <rect>
-      <x>160</x>
-      <y>370</y>
-      <width>75</width>
-      <height>23</height>
+      <x>540</x>
+      <y>240</y>
+      <width>151</width>
+      <height>41</height>
      </rect>
     </property>
     <property name="text">
      <string>salir</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_psp3">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>290</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PSP 3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_psp4">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>290</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PSP 2</string>
     </property>
    </widget>
   </widget>

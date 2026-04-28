@@ -1,6 +1,7 @@
 from PyQt5 import QtWidgets, uic
 from load.load_ventana_psp1 import PantallaPsp1
 from load.load_ventana_psp2 import PantallaPsp2
+from load.load_ventana_psp3 import PantallaPsp3
 
 class PantallaMenu(QtWidgets.QMainWindow):
     def __init__(self):
@@ -21,12 +22,14 @@ class PantallaMenu(QtWidgets.QMainWindow):
             }
         """
         self.btn_psp1.setStyleSheet(estilo_boton_menu)
-        self.btn_psp2.setStyleSheet(estilo_boton_menu)  
+        self.btn_psp2.setStyleSheet(estilo_boton_menu)
+        self.btn_psp3.setStyleSheet(estilo_boton_menu)  
         self.btn_salir.setStyleSheet(estilo_boton_menu)
 
         
         self.btn_psp1.clicked.connect(self.abrir_ejercicio)
         self.btn_psp2.clicked.connect(self.abrir_ejercicio2)
+        self.btn_psp3.clicked.connect(self.abrir_ejercicio3)
         self.btn_salir.clicked.connect(self.close)
 
     def abrir_ejercicio(self):
@@ -39,4 +42,10 @@ class PantallaMenu(QtWidgets.QMainWindow):
         self.ventana_ejercicio2 = PantallaPsp2()
         self.ventana_ejercicio2.destroyed.connect(self.show)
         self.ventana_ejercicio2.show()
+        self.hide()
+    
+    def abrir_ejercicio3(self):
+        self.ventana_ejercicio3 = PantallaPsp3()
+        self.ventana_ejercicio3.destroyed.connect(self.show)
+        self.ventana_ejercicio3.show()
         self.hide()
