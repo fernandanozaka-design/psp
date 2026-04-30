@@ -39,7 +39,21 @@ class PantallaPsp4(QtWidgets.QMainWindow):
             }
         """
         self.boton_caso1.setStyleSheet(estilo_boton)
-        self.boton_calcular.setStyleSheet(estilo_boton)
+    
+        # Estilo para el botón de calcular (Verde)
+        estilo_boton_calcular = """
+            QPushButton {
+                background-color: #27ae60;
+                color: white;
+                border-radius: 4px;
+                padding: 4px;
+                font-weight: bold;
+            }
+            QPushButton:hover {
+                background-color: #219150;
+            }
+        """
+        self.boton_calcular.setStyleSheet(estilo_boton_calcular)
 
         self.logica = PSP4()
         self.datos_x = []
